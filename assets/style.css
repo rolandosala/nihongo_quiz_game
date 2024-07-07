@@ -139,6 +139,11 @@ progress{
     align-items: center;
     flex-direction: column;
 }
+.loading-screen img{
+    max-width: 100%;
+    max-height: 100%;
+    transform: scaleX(-1);
+}
 @media(max-width: 600px){
     #main-container{
         padding: 2em;
