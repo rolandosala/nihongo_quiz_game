@@ -133,7 +133,7 @@ function checkAnswer(data) {
 function nextItem(data) {
     setTimeout(function () {
         if (num_items == limit) {
-            correctAnswer.length <= Math.round((limit / 100) * 50) ? showResult(modal_container, 'More Practice', '/assets/img/apple.png', `${correctAnswer.length} out of ${limit}`, data) : showResult(modal_container, 'Nice One', '/assets/img/congrats.gif', `${correctAnswer.length} out of ${limit}`, data);
+            correctAnswer.length <= Math.round((limit / 100) * 50) ? showResult(modal_container, 'More Practice', 'assets/img/apple.png', `${correctAnswer.length} out of ${limit}`, data) : showResult(modal_container, 'Nice One', 'assets/img/congrats.gif', `${correctAnswer.length} out of ${limit}`, data);
         } else {
             getRandomItems(data);
             showContent(modal_container, data);
